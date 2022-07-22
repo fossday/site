@@ -1,0 +1,167 @@
+footer {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid var(--border);
+
+    .menu {
+        padding: 4rem 0;
+        display: grid;
+        grid-template-columns: 33% 16% 16% 25%;
+        column-gap: calc(10% / 3);
+
+        .menu-container {
+            display: flex;
+            flex-direction: column;
+            row-gap: 1rem;
+
+            .footer-links {
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.3rem;
+
+                    li {
+                        font-size: var(--text-size);
+                    }
+                }
+            }
+
+            &.about {
+                .brand {
+                    svg {
+                        height: 2rem;
+                    }
+                }
+
+                .description {
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    p {
+                        font-weight: 400;
+                        color: var(--text-color);
+
+                        @media screen and (max-width: 1024px) {
+                            text-align: center;
+                        }
+                    }
+
+                    .social {
+                        margin-top: 1rem;
+
+                        ul {
+                            display: flex;
+                            gap: 0.3rem;
+
+                            a {
+                                svg {
+                                    fill: var(--grey-color);
+                                    width: 1.5rem;
+                                    height: 1.5rem;
+                                }
+
+                                &:hover {
+                                    svg {
+                                        fill: var(--primary-color) !important;
+                                    }
+                                }
+                            }
+
+                            @media screen and (max-width: 1024px) {
+                                align-items: center;
+                                justify-content: center;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.contact {
+                address {
+                    font-style: normal;
+                    font-size: var(--text-size);
+                    margin-bottom: 0.5rem;
+                }
+
+                a {
+                    font-weight: 600;
+                }
+
+                @media screen and (max-width: 1024px) {
+                    text-align: center;
+                }
+            }
+        }
+
+        @media screen and (max-width: 680px) {
+            grid-template-columns: 100%;
+            padding: 2rem 4rem;
+
+            .menu-container {
+                align-items: center;
+                padding-top: 2rem;
+
+                &:nth-child(1) {
+                    padding-top: 0;
+                }
+
+                &:nth-child(2),
+                &:nth-child(3) {
+                    display: none;
+                }
+            }
+        }
+
+        @media screen and (min-width: 680px) and (max-width: 1024px) {
+            grid-template-columns: 50% 50%;
+            padding: 2rem 4rem;
+
+            .menu-container {
+                align-items: center;
+
+                &:nth-child(2) {
+                    padding-top: 5rem;
+                }
+
+                &:nth-child(3),
+                &:nth-child(4) {
+                    padding-top: 3rem;
+                }
+            }
+        }
+    }
+
+    .legal {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        border-top: 1px solid var(--border-color);
+        display: flex;
+        justify-content: space-between;
+
+        .important {
+            ul {
+                display: flex;
+
+                li {
+                    a {
+                        font-size: 0.9rem;
+                        letter-spacing: -0.02rem;
+                        line-height: 1.5rem;
+                        padding: 0.2rem 0.5rem;
+                        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+                    }
+                }
+            }
+        }
+
+        @media screen and (max-width: 1220px) {
+            justify-content: center;
+        }
+    }
+
+    @media screen and (max-width: 1220px) {
+        padding: 0 4vw;
+    }
+}

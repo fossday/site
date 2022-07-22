@@ -1,0 +1,27 @@
+.content-section {
+  padding: 0 3em;
+  flex-direction: column;
+  align-items: center;
+
+  .online-items {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .online-item {
+      display: flex;
+      box-shadow: 0 8px 27px 0 rgba(90, 111, 120, 0.15);
+      border: 1px solid #444675;
+      border-radius: 10px;
+      padding: 20px;
+      .image-container {
+        img {
+          width: 8em;
+          object-fit: cover;
+          aspect-ratio: 4/3;
+        }
+      }
+      .item-description {
+      }
+    }
+  }
+}

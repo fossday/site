@@ -1,0 +1,45 @@
+.home-banner {
+    height: calc(85vh - var(--header-height));
+    width: 100vw;
+    padding: 0 3em;
+    display: flex;
+    align-items: flex-start;
+
+    .video-container {
+        position: absolute;
+        top: var(--header-height);
+        right: 0;
+        left: 0;
+        height: calc(85vh - var(--header-height));
+        width: 100vw;
+        z-index: 1;
+
+        .video-overlay {
+            height: 100%;
+            width: 100%;
+            background-color: rgba(21, 24, 83, 0.8);
+        }
+
+        video {
+            position: absolute;
+            top: 0;
+            z-index: -1;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            filter: blur(2px);
+        }
+    }
+
+    .event-content {
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+
+        h1 {}
+
+        span {}
+
+    }
+
+}

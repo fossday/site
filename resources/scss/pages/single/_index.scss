@@ -1,0 +1,283 @@
+.single-post {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .single-container {
+        display: grid;
+        grid-template-columns: 75% 25%;
+        &.page {
+            grid-template-columns: 100%;
+            padding: 0 5rem;
+        }
+        article {
+            padding: 0 3rem;
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+            @media screen and (min-width: 992px) {
+                padding-top: 8rem;
+                padding-bottom: 8rem;
+            }
+            .article-header {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 0 1rem;
+                .categories {
+                    padding: 0.5rem 0;
+                    a {
+                        font-size: 1rem;
+                        font-weight: 600;
+                        color: var(--link-success-color);
+                    }
+                }
+                h1 {
+                    font-size: 2.4rem;
+                    font-weight: 700;
+                    line-height: 1.2;
+                    letter-spacing: -0.05rem;
+                    text-align: start;
+                    @media screen and (min-width: 1200px) {
+                        font-size: 2.8rem;
+                    }
+                }
+                .article-description {
+                    font-size: 1.2rem;
+                    margin-top: 1rem;
+                    margin-bottom: 1rem;
+                    text-align: start;
+                }
+                @media screen and (max-width: 1220px) {
+                    padding: 0;
+                    padding-top: 5rem;
+                }
+            }
+            .article-grid {
+                .article-content {
+                    .article-thumbnail {
+                        width: 100%;
+                        height: 100%;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    .content {
+                        text-align: start;
+                        padding: 1rem 0;
+                        display: flex;
+                        flex-direction: column;
+                        a {
+                            color: var(--primary-color);
+                            font-weight: 500;
+                            text-decoration: underline;
+                            &:hover {
+                                color: var(--primary-color-hover);
+                                text-decoration: none;
+                            }
+                        }
+                        p {
+                            margin: 0.3rem 0;
+                            font-size: 1.1rem;
+                            color: var(--article-text-color);
+                            word-break: break-word;
+                            line-height: 1.4;
+                            margin-top: 0.4rem;
+                            strong {
+                                font-weight: 600;
+                                a {
+                                    font-weight: 600;
+                                }
+                            }
+                        }
+                        figure {
+                            picture {
+                                display: block;
+                                img {
+                                    display: block;
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                            figcaption {
+                                padding: 0.5rem;
+                                background: var(--article-figcaption-bg);
+                                font-size: 1rem;
+                                color: var(--article-figcaption-color);
+                                text-align: start;
+                            }
+                        }
+                        img {
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                        }
+                        .video-container {
+                            margin: 2rem 0;
+                            position: relative;
+                            padding-bottom: 56.25%;
+                            height: 0;
+                            max-width: 100%;
+                            iframe {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                        code {
+                            margin: 0.5rem 0;
+                        }
+                        ul {
+                            list-style: disc;
+                            padding: 0 1rem;
+                        }
+                        ol {
+                            padding: 0 1rem;
+                            li {
+                                margin: 0.5rem 0;
+                                font-weight: 500;
+                                &::marker {
+                                    font-style: oblique;
+                                    font-weight: bold;
+                                }
+                            }
+                        }
+                        h1,
+                        h2,
+                        h3,
+                        h4,
+                        h5,
+                        h6 {
+                            font-size: 1.2rem;
+                            font-weight: 700;
+                            line-height: 1.2;
+                            letter-spacing: -0.05rem;
+                            text-align: start;
+                            margin-top: 1.5rem;
+                            margin-bottom: 1rem;
+                            a {
+                                font-size: inherit;
+                            }
+                        }
+                        h1 {
+                            font-size: 2.4rem;
+                            @media screen and (min-width: 1200px) {
+                                font-size: 2.8rem;
+                            }
+                        }
+                        h2 {
+                            font-size: 1.8rem;
+                            @media screen and (min-width: 1200px) {
+                                font-size: 2.4rem;
+                            }
+                        }
+                        h3 {
+                            font-size: 1.6rem;
+                            @media screen and (min-width: 1200px) {
+                                font-size: 1.8rem;
+                            }
+                        }
+                        h4 {
+                            font-size: 1.4rem;
+                            @media screen and (min-width: 1200px) {
+                                font-size: 1.6rem;
+                            }
+                        }
+                        h5 {
+                            font-size: 1.2rem;
+                            @media screen and (min-width: 1200px) {
+                                font-size: 1.4rem;
+                            }
+                        }
+                        h6 {
+                            font-size: 1rem;
+                            @media screen and (min-width: 1200px) {
+                                font-size: 1.2rem;
+                            }
+                        }
+                        blockquote {
+                            padding: 1rem;
+                            font-size: 1.2rem;
+                            font-style: italic;
+                            font-weight: 400;
+                            line-height: 1.4;
+                            text-align: justify;
+                            margin: 2rem 0;
+                            border-top: 1px solid var(--border);
+                            border-bottom: 1px solid var(--border);
+                            p {
+                                margin: 0;
+                                color: var(--dark-color);
+                            }
+                        }
+                        @media screen and (max-width: 1220px) {
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+        }
+        aside {
+            padding: 0 1.5rem;
+            padding-top: 5rem;
+            .post-author {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 2rem;
+                .author-avatar {
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-start;
+                    img {
+                        width: 6rem;
+                        height: 6rem;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+                }
+                .author-info {
+                    .author-links {
+                        padding-top: 1rem;
+                        ul {
+                            display: flex;
+                            gap: 0.3rem;
+                            list-style: none;
+                            li {
+                                display: inline-block;
+                                height: 1.3rem;
+                                a {
+                                    svg {
+                                        width: 1.3rem;
+                                        height: 1.3rem;
+                                        fill: var(--border-color) !important;
+                                    }
+                                    &:hover {
+                                        svg {
+                                            fill: var(--primary-color) !important;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .comments {
+            margin-top: 2rem !important;
+            margin-bottom: 4rem !important;
+        }
+        @media screen and (max-width: 1220px) {
+            grid-template-columns: 100%;
+            &.page {
+                padding: 0 4vw;
+                article {
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
