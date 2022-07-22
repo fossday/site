@@ -1,0 +1,13 @@
+[package]
+name = "fossday"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+rocket = "0.5.0-rc.2"
+rocket_dyn_templates = { version = "0.1.0-rc.2", features = ["handlebars"]}
+dotenv_codegen = "0.15.0"
+toml = "0.5.9"
+serde = "1.0.139"
+comrak = "0.14.0"
+lazy_static = "1.4.0"
