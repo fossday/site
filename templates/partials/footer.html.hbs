@@ -1,0 +1,39 @@
+<footer>
+  <div class="container">
+      <section class="menu">
+          <div class="menu-container about">
+              <a href="{{ app_url }}" class="brand" rel="home">
+                  {{> partials/svg/logo}}
+              </a>
+              <div class="description">
+                <p>Palestras sobre tecnologia, Software Livre e Open Source. </p>
+              </div>
+          </div>
+          <div class="menu-container company">
+                <h3>Free Software</h3>
+                <div class="footer-links">
+                    <ul>
+                        <li>
+                            <a href="{{ make_url "fork" }}">
+                                Fork
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+      </section>
+      <section class="legal">
+          <div class="copyright">
+              <span>© {{ app_name }}</span>
+          </div>
+          <div class="important">
+            <span>made by 
+                <a href="https://tomkiel.com.br" target="_blank">Tomkiel</a>
+                 with 
+                <a href="https://www.rust-lang.org/" target="_blank">Rust</a>
+                 lang
+            </span>
+          </div>
+      </section>
+  </div>
+</footer>

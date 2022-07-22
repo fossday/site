@@ -1,0 +1,20 @@
+<section class="about-section">
+    <div class="about-content container">
+        <div class="information-container">
+            <div class="section-title">
+                <h1 class="title">{{ about }}</h1>
+            </div>
+            <div class="section-body">
+                <p>
+                    {{ about_description }}
+                </p>
+            </div>
+        </div>
+        <div class="image-container">
+            <lottie-player src="{{ make_url "lottiefiles/about.json" }}" background="transparent" speed="1" loop
+                autoplay>
+            </lottie-player>
+        </div>
+    </div>
+</section>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>

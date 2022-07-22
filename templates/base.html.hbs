@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+
+<head>
+  <meta charset="utf-8">
+  <title>{{ title }} - {{ app_name }}</title>
+  <meta name="description" content="{{ description }}" />
+  <meta name="generator" content="rocket" />
+  <link rel="canonical" href="{{ app_url }}">
+  <link rel="stylesheet" type="text/css" href="{{ make_url "css/style.min.css" }}" />
+</head>
+
+<body>
+  {{> partials/header}}
+  <div id="content">
+    {{~> page}}
+  </div>
+  {{> partials/footer}}
+  <script src="{{ make_url "js/main.bundle.min.js" }}" defer></script>
+</body>
+
+</html>

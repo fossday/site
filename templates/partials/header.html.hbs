@@ -1,0 +1,29 @@
+<header>
+    <nav class="container">
+        <div class="content">
+            <div class="logo">
+                <a href="{{ app_url }}">
+                    {{> partials/svg/logo}}
+                </a>
+            </div>
+            {{> partials/header-menu}}
+            <div class="menu-responsive">
+                <button class="btn no-border" id="hamburger-menu" aria-label="menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="menu-links-responsive" id="responsive-menu-items">
+                    {{> partials/header-menu}}
+                </div>
+            </div>
+            <div class="actions">
+                <a href="{{ make_url "participe" }}" class="btn white">Participar</a>
+                <a href="{{ make_url "fork" }}" class="btn white">Fork</a>
+            </div>
+        </div>
+    </nav>
+</header>
